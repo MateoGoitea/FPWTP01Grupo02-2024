@@ -9,8 +9,14 @@ header {
 	color: white;
 }
 
+
 .img-prin {
 	border-radius: 50px;
+}
+
+.img-prin1 {
+	border-radius: 10px;
+
 }
 
 .alumnos {
@@ -27,7 +33,57 @@ footer {
 	color: white;
 }
 
-.foto {
+.fotoJC {
+	display: block;
 	width: 200px;
 	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
 }
+
+.sobrefoto {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .1s ease;
+  background-color: rgb(0,0,0,0);
+}
+
+.container:hover .sobrefoto {
+  opacity: 1;
+}
+
+.tarjeta01 {
+	
+	background: linear-gradient(0deg, lightblue 0%, #d0fcf8 100%);
+	text-align: justify;
+	z-index:1;
+}
+
+
+.nav01 {
+	background: linear-gradient(0deg, lightblue 0%, #d0fcf8 100%);
+}
+
+.fuente01 {
+	font-family: 'firma01';
+	color: red;
+	text-align: right;
+	padding-right: 50px;
+	}
+
+@font-face {
+
+            font-family: 'firma01';
+            src: url('../fuentes/Richford-Regular.ttf') format('truetype');
+          }
+
+
+
+
+
