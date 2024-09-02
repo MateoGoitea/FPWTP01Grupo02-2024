@@ -1,111 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="estilos/estilos.css">
     <title>Home</title>
 </head>
-<header class="encabezado">
-    <nav class="navbar">
-        <div class="navbar-brand">
-            <img src="imagenes/logo.png" width="50px">
-        
-        <ul class="navbar-brand">
-			<li><a class="navbar-item" href="index.html">Home</a></li>
-			<li><a class="navbar-item" href="aboutUs.html">About Us</a></li>
-        </ul>
-        </div>
-    </nav>
-</header>
 <body>
-    <main>
-    <section class="principal">
-        <figure class="image is-2by1">
-            <img class="img-prin" src="imagenes/principal.png" />
-          </figure>
-    </section>
-    <section class="articulos">
-    <div class="columns is-vcentered is-centered">
-        <div class="column is-three-quarters">
-            <div class="card">
-                <section class="card-content">
-                    <article class="content">
-                        <h3>Sobre la empresa</h3>
-                        <p>Somos un pequeño grupo de desarrolladores que busca crear nuevos e innovadores juegos.</p>
-                    </article>
-                </section>
-            </div>
-        </div>
-        <div class="column">
-            <img src="imagenes/empresa.png" width="200px">
-        </div>
-    </div>
+ 
+    <header>
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="imagenes/logo.png" width="50px" alt="Logo">
+                </a>
 
-    <div class="columns is-vcentered is-centered">
-        <div class="column">
-            <img src="imagenes/miembros.png" width="300px">
-        </div>
-        <div class="column is is-three-quarters">
-            <div class="card">
-                <section class="card-content">
-                    <article class="content">
-                        <h3>Miembros</h3>
-                        <p>Nuestra empresa cuenta con los siguientes trabajadores:</p>
-                        <ul>
-                            <li>Castro Jose</li>
-                            <li>Chaves Johanna</li>
-                            <li>Goitea Mateo Nicolás</li>
-                            <li>Flores Chavez Edgar Franco</li>
-                            <li>Jimenez Jesús</li>
-                        </ul>
-                    </article>
-                </section>
+              
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
             </div>
-        </div>
-    </div>
-    
-    <div class="columns is-vcentered is-centered">
-        <div class="column is-three-quarters">
-            <div class="card">
-                <section class="card-content">
-                    <article class="content">
-                        <h3>Plataformas</h3>
-                        <p>Planeamos crear juegos para diversas plataformas: Windows, MacOS, Android y consolas</p>
-                    </article>
-                </section>
-            </div>
-        </div>
-        <div class="column">
-            <img src="imagenes/plataformas.png" width="300px">
-        </div>
-    </div>
 
-    <div class="columns is-vcentered is-centered">
-        <div class="column">
-            <img src="imagenes/contacto.png" width="100px">
-        </div>
-        <div class="column is-four-fifths">
-            <div class="card">
-                <section class="card-content">
-                    <article class="content">
-                        <h3>Contacto</h3>
-                        <p>Para consultas mandar un correo a grupo2Contacto@gmail.com</p>
-                    </article>
-                </section>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="index.html">Home</a>
+                    <a class="navbar-item" href="aboutUs.html">About Us</a>
+                </div>
             </div>
-        </div>
-    </div>
+        </nav>
+    </header>
 
-    
-    
-    </section>
-</main>
-</main>
-<footer class="card-footer">
-	<h3 class="card-footer-item">Fundamentos de Programacion Web - TUDIVJ - UNJu</h3>
-</footer>
-</body>
+    <main class="section">
+        <div class="container">
+            <section class="principal">
+                <figure class="image is-16by9">
+                    <img class="img-prin" src="imagenes/principal.png" alt="Imagen principal">
+                </figure>
+            </section>
+          
+            <section class="articulos">
+                <div class="columns is-vcentered">
+                    <div class="column is-three-quarters">
+                        <div class="card">
+                            <div class="card-content">
+                                <h3 class="title is-4">Sobre la empresa</h3>
+                                <p>Somos un pequeño grupo de desarrolladores que busca crear nuevos e innovadores juegos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <figure class="image">
+                            <img src="imagenes/empresa.png" alt="Empresa" width="200px">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="columns is-vcentered">
+                    <div class="column">
+                        <figure class="image">
+                            <img src="imagenes/miembros.png" alt="Miembros" width="300px">
+                        </figure>
+                    </div>
+                    <div class="column is-three-quarters">
+                        <div class="card">
+                            <div class="card-content">
+                                <h3 class="title is-4">Miembros</h3>
+                                <p>Nuestra empresa cuenta con los siguientes trabajadores:</p>
+                                <ul>
+                                    <li>Castro Jose</li>
+                                    <li>Chaves Johanna</li>
+                                    <li>Goitea Mateo Nicolás</li>
+                                    <li>Flores Chavez Edgar Franco</li>
+                                    <li>Jimenez Jesús Gabriel</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+       
+                <div class="columns is-vcentered">
+                    <div class="column is-three-quarters">
+                        <div class="card">
+                            <div class="card-content">
+                                <h3 class="title is-4">Plataformas</h3>
+                                <p>Planeamos crear juegos para diversas plataformas: Windows, MacOS, Android y consolas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <figure class="image">
+                            <img src="imagenes/plataformas.png" alt="Plataformas" width="300px">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="columns is-vcentered">
+                    <div class="column">
+                        <figure class="image">
+                            <img src="imagenes/contacto.png" alt="Contacto" width="100px">
+                        </figure>
+                    </div>
+                    <div class="column is-four-fifths">
+                        <div class="card">
+                            <div class="card-content">
+                                <h3 class="title is-4">Contacto</h3>
+                                <p>Para consultas mandar un correo a grupo2Contacto@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer has-background-dark has-text-centered">
+        <div class="content has-text-white">
+            <p>Fundamentos de Programación Web - TUDIVJ - UNJu</p>
+        </div>
+    </footer>
 </body>
 </html>

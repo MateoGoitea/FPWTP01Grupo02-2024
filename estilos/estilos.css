@@ -1,33 +1,109 @@
+
 body {
-	background-color: rgb(16, 20, 41);
-	padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: #4a4a4a;
+    line-height: 1.6;
+    background-color: #f5f5f5;
 }
 
-header {
-	margin: 5px;
-	padding: 10px;
-	color: white;
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    margin-bottom: 1rem;
 }
 
-.img-prin {
-	border-radius: 50px;
+.navbar {
+    background-color: #2a2a2a;
 }
 
-.alumnos {
-	background-color: grey;
+.navbar-item {
+    color: #f5f5f5;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
 }
 
-.alumno {
-	background-color: lightgrey;
+.navbar-item:hover {
+    background-color: #4a4a4a;
 }
 
-footer {
-	background-color: black;
-	text-align: center;
-	color: white;
+.navbar-burger {
+    color: #f5f5f5;
 }
 
-.foto {
-	width: 200px;
-	height: auto;
+.navbar-burger:hover {
+    color: #00d1b2;
+}
+
+/* Logo */
+.navbar-brand img {
+    max-height: 60px;
+}
+
+
+.section {
+    padding: 3rem 1.5rem;
+    background-color: #fff;
+}
+
+.principal img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.card-content {
+    padding: 2rem;
+}
+
+.title.is-4 {
+    font-weight: 700;
+    color: #2a2a2a;
+}
+
+.content p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.image img {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.image img:hover {
+    transform: scale(1.05);
+}
+
+
+.footer {
+    padding: 2rem;
+}
+
+.footer .content {
+    color: #f5f5f5;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        background-color: #2a2a2a;
+    }
+    
+    .section {
+        padding: 1.5rem 1rem;
+    }
+
+    .card-content {
+        padding: 1.5rem;
+    }
+
+    .image img {
+        margin-bottom: 1rem;
+    }
 }
