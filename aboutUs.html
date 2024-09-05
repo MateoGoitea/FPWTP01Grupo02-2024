@@ -1,111 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+ <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
-    <link rel="stylesheet" href="estilos/estilos.css">
-    <title>About Us</title>
-</head>
-<header class="encabezado">
-    <nav>    
-    <div class="tabs is-right"> 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutUs.html">About Us</a></li>
-        </ul>
-    </div>
-    
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+     <link rel="stylesheet" href="estilos/estilos.css">
+     <title>About Us</title>
+ </head>
+
+ <body>
+
+  <header>
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <img src="imagenes/logo.png" width="50px" alt="Logo">
+            </a>
+
+          
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">Home</a>
+                <a class="navbar-item" href="aboutUs.html">About Us</a>
+            </div>
+        </div>
     </nav>
-   
 </header>
 
-<body>
-	<main>
-	<section class="articulos">
-    <div class="card">
-        <section class="card-content">
-            <article class="content">
-                <h2>Castro Jose</h2>
-                <p>Estudiante</p>
-            </article>
-        </section>
-    </div>
-    <div class="column is-half">
-        <div class="card">
-            <section class="card-content">
-                <div class="media">
-                    <div class="media-left">
-                    <figure class="image is-96x96">
-                        <img
-                        src="imagenes/johanna.jpg"
-                        alt="Placeholder image"
-                        />
-                    </figure>
-                    </div>
-                    <div class="media-content">
-                    <p class="title is-4">Chaves Johanna Milagro</p>
-                    <p class="subtitle is-6">instagram: @johanna._.ng</p>
-                    </div>
-                </div>
-                <div class="content">
-                    <ul>
-                        <li>Estudiante de la carrera de videojugos de la UNJU</li>
-                        <li>Juego favorito: Ori and the Blind Forest</li>
-                        <li>Entreno Calistenia</li>
-                        <li>Adoro a los gatos</li>
-                    </ul>
-                </div>
-            </section>
+<section class="section">
+    <div class="container">
+        <div class="column is-full">
+          <figure class="image is-16by9">
+            <img src="imagenes/fondoAboutUs.jpg" alt="Photo">
+          </figure>
         </div>
-    </div>
-    
-    <div class="column is-half">
-        <div class="card">
-            <section class="card-content">
-                <div class="media">
-                    <div class="media-left">
-                    <figure class="image is-96x96">
-                        <img
-                        src="imagenes/goitea.jpg"
-                        alt="Placeholder image"
-                        />
-                    </figure>
-                    </div>
-                    <div class="media-content">
-                    <p class="title is-4">Goitea Mateo Nicolás</p>
-                    <p class="subtitle is-6">Siganme en instagram xd: @srgreen_73</p>
-                    </div>
-                </div>
-                <div class="content">
-                    Tengo 20 años, estudio en la carrera TUDIVJ de la UNJU. Vengo de la ETP Nº1. Mi comida favorita es la hamburguesa, mi juego favorito es DOOM, me gusta dibujar.
-                </div>
-            </section>
+  <!--titulo About Us y una descripcion de ejemplo-->
+        <div class="columns is-vcentered">  
+           <div class="card-content">
+              <p class="title">About Us</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis cumque facilis placeat aspernatur architecto repellat ab totam error distinctio numquam tempora temporibus culpa accusantium eius, nobis asperiores. Molestias, totam minus.</p>
+           </div>
         </div>
-    </div>
-    
-    <div class="card">
-        <section class="card-content">
-            <article class="content">
-                <h2>Flores Chavez Edgar Franco</h2>
-                <p>Actualmente estudio y trabajo vendiendo productos informaticos, en mi tiempo libre me gusta jugar con amigos, salir a acampar e ir gimnasio, apruebeme profe.</p>
-            </article>
-        </section>
-    </div>
-    <div class="card">
-        <section class="card-content">
-            <article class="content">
-                <h2>Jimenez Jesús</h2>
-                <p>HOlA soy Yisus,me encanta crear nuevas cosas o inventar por eso desarrollo videojuegos son la perfecta interseccion entre todos mis gustos</p>
-            </article>
-        </section>
+
+  <!-- tarjetas de presentacion-->
+
+   <!--con foto a la izquierda-->
+        <div class="columns is-vcentered">
+            <div class="column is-one-third">
+              <figure class="image is-4by3">
+                <img src="#" alt="Photo">
+              </figure>
+            </div>
+
+            <div class="card-content">
+              <p class="title">Castro Jose</p>
+              <p class="subtitle">Estudiante</p>
+              <p>descripcion</p>
+            </div>        
+        </div>
+
+   <!--con foto a la derecha-->
+        <div class="columns is-vcentered">
+          <div class="card-content">
+            <p class="title">Chaves Johanna Milagro</p>
+            <p class="subtitle">Concept-Art</p>
+            <p>studiante de la carrera de videojugos de la UNJU, me gustan los juegos de aventura,fin</p>
+          </div>
+
+          <div class="column is-one-third">
+            <figure class="image is-4by3">
+              <img src="imagenes/johanna.jpg" alt="Photo">
+            </figure>
+          </div>
+        </div>
+
+    <!--con foto a la izquierda-->
+        <div class="columns is-vcentered">
+            <div class="column is-one-third">
+              <figure class="image is-4by3">
+                <img src="imagenes/goitea.jpg" alt="Photo">
+              </figure>
+            </div>
+
+            <div class="card-content">
+              <p class="title">Goitea Mateo Nicolas</p>
+              <p class="subtitle">Siganme en instagram xd: @srgreen_73</p>
+              <p>Tengo 20 años, estudio en la carrera TUDIVJ de la UNJU. Vengo de la ETP Nº1. Mi comida favorita es la hamburguesa, mi juego favorito es DOOM, me gusta dibujar.</p>
+            </div>        
+        </div>
+        
+    <!--con foto a la derecha-->
+        <div class="columns is-vcentered">
+          <div class="card-content">
+            <p class="title">Flores Chavez Edgar Franco</p>
+            <p class="subtitle">Estudiante</p>
+            <p>Actualmente estudio y trabajo vendiendo productos informaticos, en mi tiempo libre me gusta jugar con amigos, salir a acampar e ir gimnasio, apruebeme profe.</p>
+          </div>
+
+          <div class="column is-one-third">
+            <figure class="image is-4by3">
+              <img src="#" alt="Photo">
+            </figure>
+          </div>
+        </div>
+
+    <!--con foto a la izquierda-->
+        <div class="columns is-vcentered">
+            <div class="column is-one-third">
+              <figure class="image is-4by3">
+                <img src="#" alt="Photo">
+              </figure>
+            </div>
+
+            <div class="card-content">
+              <p class="title">Jimenez Jesús</p>
+              <p class="subtitle">Estudiante</p>
+              <p>HOlA soy Yisus,me encanta crear nuevas cosas o inventar por eso desarrollo videojuegos son la perfecta interseccion entre todos mis gustos</p>
+            </div>        
+        </div>
     </div>
 </section>
-</main>
-<footer class="card-footer">
-	<h3 class="card-footer-item">Fundamentos de Programacion Web - TUDIVJ - UNJu</h3>
-</footer>
-</body>
 
+  <footer class="footer has-background-dark has-text-centered">
+    <div class="content has-text-white">
+        <p>Fundamentos de Programación Web - TUDIVJ - UNJu</p>
+    </div>
+  </footer>
+
+</body>
 </html>
